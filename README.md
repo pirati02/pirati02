@@ -45,6 +45,6 @@ I treat AI as a practical force multiplier, not a replacement for engineering:
 
 If you’re interested in collaboration, architecture discussions, or modern software engineering in general, I’m always open to a good technical conversation.
 
-- 🔗 **GitHub:** [baqsia](https://github.com/baqsia)  
+- 🔗 **GitHub:** [pirati02](https://github.com/pirati02)  
 - ✉️ **Email:** [b.gogia94@gmail.com](mailto:b.gogia94@gmail.com)
 - 🔗 **LinkedIn:** [baqsia](https://www.linkedin.com/in/baqsia/)
