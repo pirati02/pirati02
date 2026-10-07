@@ -1,0 +1,103 @@
+<div class="page-background">
+  <main class="resume-sheet">
+    <header class="masthead">
+      <div class="blue-shape" aria-hidden="true"></div>
+      <div class="identity">
+        <p class="kicker">Portfolio / 2026</p>
+        <h1>
+          Bakar
+          <br />
+          Gogia
+        </h1>
+        <p class="role">Lead software engineer</p>
+      </div>
+
+      <div class="contact-card">
+        <p>Cloud-native platforms</p>
+        <a href="mailto:b.gogia94@gmail.com">b.gogia94&#64;gmail.com</a>
+        <a href="https://github.com/pirati02" target="_blank" rel="noreferrer">
+          github.com/pirati02
+        </a>
+        <a
+          href="https://www.linkedin.com/in/baqsia/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          linkedin.com/in/baqsia
+        </a>
+      </div>
+    </header>
+
+    <div class="resume-grid">
+      <aside class="side-column">
+        <section>
+          <app-section-title icon="profile">Profile</app-section-title>
+          @for (paragraph of profile; track paragraph) {
+            <p class="profile-copy">{{ paragraph }}</p>
+          }
+        </section>
+
+        <section>
+          <app-section-title icon="education">Education</app-section-title>
+          <article class="education">
+            <p class="meta">Computer science</p>
+            <h3>Bachelor's degree</h3>
+            <strong>Akaki Tsereteli State University</strong>
+          </article>
+        </section>
+
+        <section>
+          <app-section-title icon="project">Selected systems</app-section-title>
+          @for (system of selectedSystems; track system.name; let i = $index) {
+            <article class="mini-project">
+              <span>{{ ordinal(i) }}</span>
+              <h3>{{ system.name }}</h3>
+              <p>{{ system.summary }}</p>
+            </article>
+          }
+        </section>
+
+        <section>
+          <app-section-title icon="code">Core skills</app-section-title>
+          @for (group of coreSkills; track group.title) {
+            <app-skill-group [title]="group.title" [items]="group.items" />
+          }
+        </section>
+      </aside>
+
+      <div class="main-column">
+        <section>
+          <app-section-title icon="briefcase">Work experience</app-section-title>
+
+          @for (entry of experiences; track entry.date) {
+            <app-experience
+              [date]="entry.date"
+              [company]="entry.company"
+              [role]="entry.role"
+              [points]="entry.points"
+              [stack]="entry.stack"
+            />
+          }
+        </section>
+
+        <section class="toolkit-section">
+          <app-section-title icon="code">Cloud &amp; toolkit</app-section-title>
+          <div class="toolkit-grid">
+            @for (area of toolkit; track area.title) {
+              <div>
+                <h3>{{ area.title }}</h3>
+                <p>{{ area.body }}</p>
+              </div>
+            }
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-shape" aria-hidden="true"></div>
+      <p>Have a complex platform to build or modernize?</p>
+      <a href="mailto:b.gogia94@gmail.com">Let's talk</a>
+    </footer>
+  </main>
+</div>
