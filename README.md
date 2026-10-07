@@ -2,6 +2,8 @@
 
 **Senior Software Engineer | AI-Driven Engineer | Modernization Enthusiast**
 
+[resume](https://pirati02.onrender.com)  
+
 Across multiple complex products and platforms, I’ve focused on building and evolving software that actually survives real-world constraints: legacy systems, messy domains, and the need to keep shipping while everything changes underneath.
 
 I care about strong engineering foundations, enabling technical teams, and solving hard problems with pragmatic, well-reasoned solutions rather than hype.
